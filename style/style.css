@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+header {
+  background-color: #252a34;
+  background-image: url(../img/bghead.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid #08d9d6;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  margin-right: 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  overflow: hidden;
+  gap: 5px;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 5px;
+}
+
+.search input[type="text"] {
+  margin-top: 10px;
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+}
+
+.search button {
+  padding: 8px 16px;
+  background-image: url(../img/scrIcon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30px;
+  background-color: #fff;
+  color: #252a34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  color: #eaeaea;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 10px;
+  padding: 20px;
+}
+
+.shelf {
+  border: 5px solid #08d9d6;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  background-color: #252a34;
+  background-image: url(../img/bghead.jpg);
+  background-size: cover;
+}
+
+.shelf h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #08d9d6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-family: "Caveat", cursive;
+  padding: 10px 0;
+  border-bottom: 5px solid #ff731d;
+  color: #252a34;
+  font-weight: bold;
+  background-image: url(../img/paper.jpg);
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  transition: 0.3s;
+}
+
+ul :hover {
+  box-shadow: 0px -2px 3px 1px rgba(234, 234, 234, 0.5),
+    0px -4px 6px 3px rgba(234, 234, 234, 0.5),
+    0px -6px 9px 5px rgba(234, 234, 234, 0.5);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 8px;
+}
+
+.input-form {
+  order: 2;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-right: 50px;
+}
+
+.input-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.input-form input[type="text"],
+.input-form input[type="number"],
+.input-form label {
+  margin-bottom: 10px;
+  width: 100%;
+  padding-right: 0px;
+}
+
+.input-form button {
+  background-color: #ff2e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  width: 50%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.input-form button:hover {
+  background-color: #fff7e9;
+  color: #252a34;
+}
+
+#edit-book-form {
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#edit-book-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#edit-book-form input[type="text"],
+#edit-book-form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  padding-right: 0px;
+  margin-bottom: 10px;
+}
+
+#edit-book-form button {
+  background-color: #ff2e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  align-items: center;
+}
+
+#edit-book-form button:hover {
+  background-color: #fff7e9;
+  color: #252a34;
+}
+
+.shelf button {
+  padding: 10px 20px;
+  max-height: 60px;
+  background-color: #ff2e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shelf button:hover {
+  color: #252a34;
+  background-color: #fff7e9;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shelf,
+  .input-form {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .search input {
+    max-width: 100px;
+  }
+}

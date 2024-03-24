@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RakBukuKu</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- icon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <!-- favicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" width="45px" />
+        <h1>
+          <a href="index.html" style="text-decoration: none">
+            <span style="color: #ff2e63">Rak</span
+            ><span style="color: #fff">Buku</span
+            ><span style="color: #08d9d6">Ku</span>
+          </a>
+        </h1>
+      </div>
+      <div class="search">
+        <input type="text" id="search" placeholder="Cari buku" />
+        <button id="search-button"></button>
+      </div>
+    </header>
+    <!-- endOfHeader -->
+
+    <!-- maincontent -->
+    <div class="container">
+      <section class="shelf" id="unfinished-shelf">
+        <h2>Belum selesai dibaca</h2>
+        <ul id="unfinished-list"></ul>
+      </section>
+      <section class="shelf" id="finished-shelf">
+        <h2>Selesai dibaca</h2>
+        <ul id="finished-list"></ul>
+      </section>
+      <section class="input-form">
+        <form id="add-book-form">
+          <h2>Tambah Buku</h2>
+          <input type="text" id="title" placeholder="Judul" required />
+          <input type="text" id="author" placeholder="Penulis" required />
+          <input type="number" id="year" placeholder="Tahun" required />
+          <label for="is-complete">Selesai dibaca?</label>
+          <input type="checkbox" id="is-complete" />
+          <button type="submit">Tambahkan Buku</button>
+        </form>
+        <form id="edit-book-form" style="display: none">
+          <h2>Edit Buku</h2>
+          <input type="text" id="edit-title" placeholder="Judul" required />
+          <input type="text" id="edit-author" placeholder="Penulis" required />
+          <input type="number" id="edit-year" placeholder="Tahun" required />
+          <button id="edit-submit">Simpan Perubahan</button>
+        </form>
+      </section>
+      <!-- Form Edit Buku -->
+      <section class="edit-form" id="edit-book-form" style="display: none">
+        <h2>Edit Buku</h2>
+        <input type="text" id="edit-title" placeholder="Judul" required />
+        <input type="text" id="edit-author" placeholder="Penulis" required />
+        <input type="number" id="edit-year" placeholder="Tahun" required />
+        <button id="edit-submit">Simpan Perubahan</button>
+      </section>
+    </div>
+    <!-- endOfContent -->
+
+    <!-- myscript -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
