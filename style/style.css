@@ -50,8 +50,8 @@ header h1 {
 }
 
 .search input[type="text"] {
-  margin-top: 10px;
-  padding: 8px;
+  margin-top: 0px;
+  padding: 12px;
   margin-right: 10px;
   border: none;
 }
